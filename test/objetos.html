@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <button type="button" id="mostrar">Mostrar saludo</button>
+
+  <script>
+
+    //Manejador
+    const boton = document.getElementById('mostrar');
+    const amigos = ["Juan", "Pedro", "José", "Teresa"];
+    
+    const peliculas = [
+      ["RF8", "Rambo", "Indestructibles"],
+      ["Son como niños", "Y dónde están las rubias", "Una esposa de mentira"],
+      ["It", "Chucky", "Barco fantasma", "Conjuro"]
+    ];
+
+    const miPerfil = {
+      "personal"    : {
+        "apellidos" : "Francia Minaya",
+        "nombres"   : "Jhon Edward",
+        "edad"      : 38
+      },
+      "estudiante"  : {
+        "sede"      : "Chincha",
+        "carrera"   : "Ingeniería de Software con IA",
+        "semestre"  : "IV",
+        "skills"    : ["HTML", "CSS", "JS", "PHP", "MYSQL"]
+      }
+    };
+
+    console.log(amigos);
+    console.log(peliculas[2][0]);
+    console.log(miPerfil.estudiante);
+
+    function saludar(nombre = ''){
+      console.log(`Hola mundo ${nombre}`);
+    }
+
+    function mostrarDespedida(){
+      //Otras instrucciones
+      console.log("Un gusto conocerte");
+      //Otras instrucciones
+    }
+
+    //Evento = RESPUESTA
+    boton.addEventListener("click", mostrarDespedida);
+    
+  </script>
+</body>
+</html>
